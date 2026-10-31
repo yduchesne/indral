@@ -54,6 +54,8 @@ Read-only by default; deterministic test data; error/quality reporting; source a
 
 ## Learning progression (reference topics)
 
+See the **[curated learning-resource guide](../learning/RESOURCES.md)** for phase-by-phase free and affordable courses, tutorials, training providers, specific skills, descriptions and practice exercises. **OT Security is cross-cutting from Phase 1**: the [dedicated OT Security curriculum](../learning/OT_SECURITY.md) covers CISA/INL courses, ISA/IEC 62443, protocol security/PKI, MITRE ATT&CK for ICS, detection and incident response. Phase 6 completes integrated hardening; it is not the first security work.
+
 - **P1:** industrial networking, Modbus, OPC UA, MQTT, BACnet and ISA-95 equipment/system boundaries.
 - **P2:** SCADA/historian concepts, alarm and event management, signal quality, Ignition.
 - **P3:** event sourcing vs bitemporal persistence, valid vs knowledge time, evidence provenance, incident reconstruction.
@@ -63,7 +65,7 @@ Read-only by default; deterministic test data; error/quality reporting; source a
 - **P7:** Quervant graph and ontology design docs, semantic indexing.
 - **P8:** AWS Certified Generative AI Developer – Professional domains, Bedrock/AgentCore and agent evaluations.
 
-Potential learning sources: [Inductive University](https://inductiveuniversity.com/), [Modbus specifications](https://modbus.org/specs.php), [OPC Foundation](https://opcfoundation.org/), [BACnet International](https://bacnetinternational.org/), [ISA-95](https://www.isa.org/standards-and-publications/isa-standards/isa95), [NIST SP 800-82](https://csrc.nist.gov/pubs/sp/800/82/r3/final), [AWS Bedrock documentation](https://docs.aws.amazon.com/bedrock/). Resources are educational references, not mandatory implementation dependencies.
+The [learning-resource guide](../learning/RESOURCES.md) includes online courses, hands-on tutorials, reference reading, access/cost notes and practical Indral exercises. Listed resources are not mandatory implementation dependencies.
 
 ## Initial next PRs — proposals, not an approved breakdown
 

@@ -1,23 +1,31 @@
 # Indral documentation
 
-**Status:** Foundational design baseline (proposed for review); no production implementation is implied.
+**Status: Under development.** This repository currently contains product decisions and planning documents. Described capabilities are **not yet implemented or production-ready**.
 
-## Starting points
-- [Product definition and scope](PRODUCT.md)
-- [Architecture and core/domain boundaries](architecture/CORE_BOUNDARIES.md)
-- [Protocol connectivity contracts](architecture/CONNECTIVITY.md)
+## Getting started
+
+- [Project README](../README.md) — short product description, project status and entry points.
+- [Product definition and scope](PRODUCT.md) — goals and exclusions.
+- [Overall roadmap and dependencies](roadmap/ROADMAP.md) — Phases 1–8, including independent domain applications.
+- [Learning resources and practical exercises](learning/RESOURCES.md) — curated free/affordable courses, tutorials and reference material for every roadmap topic.
+- [Dedicated OT Security learning track](learning/OT_SECURITY.md) — cross-phase ICS/OT cybersecurity courses, PKI, segmentation, monitoring and incident response.
+
+## Architecture and validation
+
+- [Core architecture and domain boundaries](architecture/CORE_BOUNDARIES.md)
+- [Four-protocol connectivity design](architecture/CONNECTIVITY.md)
 - [Temporal model and Operational Time Travel](architecture/TEMPORAL_MODEL.md)
 - [Reference scenarios and validation](architecture/REFERENCE_SCENARIOS.md)
-- [Overall roadmap and dependencies](roadmap/ROADMAP.md)
 - [Core Phase 1–3 acceptance plan](roadmap/CORE_ACCEPTANCE.md)
 - [ADR-0001 — Foundational architecture](decisions/ADR-0001-foundation.md)
 
 ## Reading rules
 
-1. A **decision** records the current product planning baseline; an **implementation specification** must refine interfaces, storage schema, and protocol details before coding.
-2. A **phase** is an ordered product outcome, **not** permission to postpone testing, security, or operational hygiene to a later phase.
-3. **Core** does not know manufacturing or building business concepts; domain applications use common core services and add their own semantics.
-4. Support for a protocol does not imply control authority or support for every feature/profile of that protocol.
-5. **Quervant and AI are not prerequisites** for any core or first-domain functionality.
+1. A **decision** records the current product planning baseline; an **implementation specification** must refine interfaces, storage schemas and protocol details before coding.
+2. A **phase** is a product outcome, **not** permission to defer tests, security or basic recovery until a later phase.
+3. **Core (Phases 1–3)** remains domain-independent. Manufacturing/MES (Phase 4) and optional Smart Buildings/BAS (Phase 5) own their specific semantics.
+4. **Modbus, OPC UA, MQTT and BACnet connectivity** are Core features; support does not imply active control or every profile of each protocol.
+5. **Quervant and AI are not dependencies** of any Core or Manufacturing feature.
+6. Course materials are educational references, not tool/library selections or product dependencies.
 
-All scope changes should update the roadmap and, for architectural changes, an ADR.
+Architectural scope changes should update the roadmap and an ADR.
