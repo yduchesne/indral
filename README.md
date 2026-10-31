@@ -16,6 +16,7 @@ Indral is a local-first, read-only-by-default platform for integrating operation
 | [Product scope](docs/PRODUCT.md) | Product goals, boundaries, exclusions and technology decisions |
 | [Overall roadmap](docs/roadmap/ROADMAP.md) | Phases 1–8, dependencies and milestones |
 | [Learning resources by phase](docs/learning/RESOURCES.md) | Free/low-cost courses, tutorials and exercises for every roadmap phase |
+| [OT Security learning track](docs/learning/OT_SECURITY.md) | CISA/INL training, IEC 62443, protocol security, detection, assessments and incident response |
 | [Core acceptance criteria](docs/roadmap/CORE_ACCEPTANCE.md) | Testable completion gates for Phases 1–3 |
 | [Core architecture and domain boundaries](docs/architecture/CORE_BOUNDARIES.md) | Core versus Manufacturing and Smart Buildings responsibilities |
 | [Protocol connectivity design](docs/architecture/CONNECTIVITY.md) | Modbus TCP, OPC UA, MQTT, BACnet/IP and shared adapter contracts |
