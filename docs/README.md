@@ -8,6 +8,7 @@
 - [Product definition and scope](PRODUCT.md) — goals and exclusions.
 - [Overall roadmap and dependencies](roadmap/ROADMAP.md) — Phases 1–8, including independent domain applications.
 - [Learning resources and practical exercises](learning/RESOURCES.md) — curated free/affordable courses, tutorials and reference material for every roadmap topic.
+- [Dedicated OT Security learning track](learning/OT_SECURITY.md) — cross-phase ICS/OT cybersecurity courses, PKI, segmentation, monitoring and incident response.
 
 ## Architecture and validation
 
