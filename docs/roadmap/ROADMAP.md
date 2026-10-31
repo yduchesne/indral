@@ -54,7 +54,7 @@ Read-only by default; deterministic test data; error/quality reporting; source a
 
 ## Learning progression (reference topics)
 
-See the **[curated learning-resource guide](../learning/RESOURCES.md)** for phase-by-phase free and affordable courses, tutorials, training providers, specific skills, descriptions and practice exercises.
+See the **[curated learning-resource guide](../learning/RESOURCES.md)** for phase-by-phase free and affordable courses, tutorials, training providers, specific skills, descriptions and practice exercises. **OT Security is cross-cutting from Phase 1**: the [dedicated OT Security curriculum](../learning/OT_SECURITY.md) covers CISA/INL courses, ISA/IEC 62443, protocol security/PKI, MITRE ATT&CK for ICS, detection and incident response. Phase 6 completes integrated hardening; it is not the first security work.
 
 - **P1:** industrial networking, Modbus, OPC UA, MQTT, BACnet and ISA-95 equipment/system boundaries.
 - **P2:** SCADA/historian concepts, alarm and event management, signal quality, Ignition.
