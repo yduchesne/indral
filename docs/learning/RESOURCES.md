@@ -172,7 +172,7 @@ This is a practical curriculum for a software engineer learning industrial conne
 |---|---|
 | [BACnet Institute — Facility Manager's Guide to BAS](https://thebacnetinstitute.org/courses-overview/) — Free account/course | BAS design, procurement, operation, commissioning and typical system boundaries; strong industry-oriented overview. |
 | [BACnet Institute — BACnet Cybersecurity](https://thebacnetinstitute.org/courses-overview/) — Free account/course | BACnet/SC and building OT security; learn future interoperability constraints without making BACnet/SC a Core Phase 1 dependency. |
-| [ASHRAE eLearning](https://www.ashrae.org/professional-development/learning-portal) — Mixed availability; many paid courses | Optional deeper HVAC, controls and energy training if free BACnet/BAS instruction is insufficient. Check current course offerings and costs. |
+| [ASHRAE eLearning](https://www.ashrae.org/professional-development/elearning-on-demand) — Mixed availability; many paid courses | Optional deeper HVAC, controls and energy training if free BACnet/BAS instruction is insufficient. Check current course offerings and costs. |
 
 ### Building data semantics and energy
 
@@ -181,7 +181,7 @@ This is a practical curriculum for a software engineer learning industrial conne
 | [Brick Schema — Documentation](https://docs.brickschema.org/) — Free examples and reference | Buildings, spaces, equipment, points and relationship semantics. Source for **building-domain** vocabulary, not a Core ontology mandate. |
 | [Project Haystack — Introduction](https://www.project-haystack.org/doc/docHaystack/Intro) — Free tutorial/reference | Tags, site/space/equipment/point concepts and typed data APIs for building metadata integration. |
 | [Project Haystack — Ontology](https://www.project-haystack.org/doc/docHaystack/Ontology) — Free reference | Semantic definitions, subtype relationships, units and entity relationships. Compare with Brick when modeling devices/points. |
-| [DOE Better Buildings — Resources](https://betterbuildingssolutioncenter.energy.gov/resources) — Free public guidance and webinars | Building energy use, benchmarking and operational improvement. Supplemental business-domain context, not a required Indral dependency. |
+| [DOE Better Buildings — Resources](https://betterbuildingssolutioncenter.energy.gov/events-webinars) — Free public guidance and webinars | Building energy use, benchmarking and operational improvement. Supplemental business-domain context, not a required Indral dependency. |
 
 **Indral exercise:** Build a small **separate** BAS/HVAC fixture (one AHU and two zones), map synthetic BACnet points into building-owned entities, reconstruct a zone-comfort incident. Prove no changes to Core historian/temporal invariants are required.
 
