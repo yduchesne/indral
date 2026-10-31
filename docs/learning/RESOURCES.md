@@ -3,6 +3,8 @@
 **Curated:** 2026-10-31 · **Status:** Learning guide, not an implementation specification.  
 **Roadmap:** [Phases 1–8](../roadmap/ROADMAP.md) · **Initial focus:** Phases 1–3 (domain-independent Core), followed by Phase 4 (Manufacturing). Phase 5 (Smart Buildings) is an independent, optional domain. Phases 7–8 (Quervant and AI) are deferred.
 
+**OT Security is a cross-cutting learning track from Phase 1:** use the dedicated **[OT Security curriculum](OT_SECURITY.md)** for free CISA/INL courses, ISA/IEC 62443 introductory modules, secure industrial protocol configuration, MITRE ATT&CK for ICS, passive monitoring, assessment, and incident response. The Phase 6 section below is a brief deployment-oriented subset.
+
 ## How to use this guide
 
 This is a practical curriculum for a software engineer learning industrial connectivity, MES/MOM, BAS, industrial reliability, and temporal operations intelligence. **Prioritize courses, demos, and small local labs over reading entire protocol specifications.** Each entry describes the topic and its application to Indral. Study only the topics needed for the next deliverable; don't block Phase 1 on optional Phase 5–8 training.
@@ -71,6 +73,8 @@ This is a practical curriculum for a software engineer learning industrial conne
 | [BACnet Institute — Resource Library](https://thebacnetinstitute.org/resources-overview/) — Free account | Technical presentations on discovery, networks, troubleshooting, interoperability and cybersecurity. |
 | [BAC0 Python — Getting Started](https://bac0.readthedocs.io/en/latest/getstarted.html) — Free guided examples | Practical BACnet/IP discovery, device interaction and property reads. Uses BACpypes3; a useful candidate for fixture/protocol-library evaluation, **not** a locked technology choice. |
 | [BACnet Committee — FAQ](https://bacnet.org/faq/) — Free reference | Terminology and implementation context after the introductory course. |
+
+**OT Security alongside Phase 1:** start [CISA/INL ICS Cybersecurity 100W/210W](OT_SECURITY.md#A-foundations-ot-networks-safety-and-threat-modeling) and [OPC UA Security and PKI](https://opcuaconnect.com/en/learn/build/security-and-pki/). Design read-only capability enforcement, bounded network discovery, secure connection configuration, and test identities before protocol implementation.
 
 **Indral exercise:** Run one synthetic source for each protocol. Capture native locator, canonical asset ID, value, quality and timestamp provenance. Deliberately omit one source timestamp; interrupt/reconnect all sources; use both BACnet discovery and explicitly configured known-device access. Confirm no write commands are exposed.
 
@@ -193,11 +197,18 @@ This is a practical curriculum for a software engineer learning industrial conne
 
 ### OT/ICS security and operational resilience
 
+This is **not** the start of OT Security work. Study security from Phase 1 using the [dedicated OT Security learning track](OT_SECURITY.md), then apply and verify the following controls during Phase 6.
+
 | Resource and access | Description / what to practice |
 |---|---|
 | [CISA / Idaho National Laboratory — ICS Cybersecurity Training](https://inl.gov/national-security/ics-cybersecurity-training/) — **Free self-paced courses; registration** | ICS/OT components, deployment differences, risks, attacks and IT/OT defensive practices. Prioritize deployment and defense modules; online units are often ~1 hour. |
 | [NIST SP 800-82 Rev. 3 — Guide to OT Security](https://csrc.nist.gov/pubs/sp/800/82/r3/final) — Free security reference | OT segmentation, inventory, incident response, safety/availability tradeoffs, remote access and defense in depth. Reference after hands-on CISA lessons. |
 | [BACnet Institute — Cybersecurity course](https://thebacnetinstitute.org/courses-overview/) — Free account/course | Security posture of BACnet/BACnet/SC, especially the risks of unsegmented discovery and legacy device connectivity. |
+| [ISA/IEC 62443 modular training](https://programs.isa.org/free-training) — **First module free; full courses paid** | Start IC32M01 for OT security lifecycle, segmentation, zones/conduits and technical control planning. Do not assume certification is free. |
+| [CISA/INL — ICS Cybersecurity (300)](https://inl.gov/national-security/ics-cybersecurity-training/) — **Free, registration** | ~12–15 hour virtual/hands-on course on ICS network mapping, defensive analysis and vulnerability/risk reasoning; use only the course-provided lab. |
+| [MITRE ATT&CK for ICS](https://attack.mitre.org/matrices/ics/) — Free knowledge base | Defensive technique analysis including alarm suppression, loss of view/control and reconnaissance; connect to evidence-backed incident timelines. |
+| [Dragos OT-CERT](https://www.dragos.com/community/ot-cert) — Free member resources, eligibility/registration may apply | OT security toolkits, incident response, logging, ransomware tabletop exercises and small-operator guidance. |
+| [SANS — ICS/OT Incident Response guide](https://www.sans.org/posters/industrial-control-system-cyber-incident-response) — Free poster | Plant-safe containment, evidence handling, safety responsibilities and recovery planning, suitable for a tabletop exercise. |
 | [OpenTelemetry — Documentation](https://opentelemetry.io/docs/) — Free tutorials | Tracing, metrics and logging across adapters, ingestion, historian and API. Correlate operational failures without leaking credentials. |
 | [PostgreSQL — Backup and Restore](https://www.postgresql.org/docs/current/backup.html) — Free tutorials/reference | Restore exercises and history preservation; backups should cover evidence, provenance and timeline invariants. |
 
@@ -209,6 +220,8 @@ This is a practical curriculum for a software engineer learning industrial conne
 | [AWS IoT Greengrass V2 — Tutorials](https://docs.aws.amazon.com/greengrass/v2/developerguide/tutorials.html) — Free tutorials; **usage charges may apply** | MQTT edge interaction, component rollout and secure device operations. Use V2; V1 is past end of support. |
 | [AWS IoT SiteWise — Documentation](https://docs.aws.amazon.com/iot-sitewise/latest/userguide/what-is-sitewise.html) — Free docs; **usage charges may apply** | Compare AWS asset/time-series models with Indral's canonical equipment model. Optional interoperability/managed-service research. |
 | [AWS Well-Architected — Reliability Pillar](https://docs.aws.amazon.com/wellarchitected/latest/reliability-pillar/welcome.html) — Free reference | Availability, error recovery, observability and failure testing; apply selectively to Indral's local/cloud deployment. |
+
+**OT-specific practice:** see the [OT Security track's phase-by-phase acceptance mapping](OT_SECURITY.md#how-this-track-maps-onto-indral-acceptance-criteria).
 
 **Indral exercise:** Simulate gateway loss, reconnect, backlog and database recovery; verify no silent history loss. Deploy Core + Manufacturing to local and AWS environments with equivalent API/investigation tests. Industrial protocol adapters should remain near industrial devices or simulated edge endpoints.
 
